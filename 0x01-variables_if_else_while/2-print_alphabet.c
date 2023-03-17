@@ -7,13 +7,13 @@
  * Return: Always 0 (Success)
  */
 
-int main(void)
+int main()
 {
-	int char low;
+	char low;
 
 	for (low = 'a'; low <= 'z'; low++)
 	{
-		putchar(low);
+		putchar("%c", low);
 		putchar("\n");
 	}
 	return (0);
