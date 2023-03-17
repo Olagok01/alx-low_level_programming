@@ -7,9 +7,9 @@
  * Return: Always 0 (Success)
  */
 
-void main()
+int main(void)
 {
-	int low;
+	int char low;
 
 	for (low = 'a'; low <= 'z'; low++)
 	{
