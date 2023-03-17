@@ -9,14 +9,15 @@
 
 int main(void)
 {
-	char low;
+	char low = 'a';
+
 	for (low = 'a'; low <= 'z'; low++)
 	{
 		if (low != 'q' && low != 'e')
 		{
 			putchar(low);
-			putchar("\n");
 		}
 	}
+	putchar('\n');
 	return (0);
 }
