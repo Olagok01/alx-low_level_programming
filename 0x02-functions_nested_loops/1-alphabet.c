@@ -7,12 +7,12 @@
 
 int main(void)
 {
-	char = 'a';
+	char low = 'a';
 
-	while (char < 'z')
+	while (low < 'z')
 	{
-		putchar(char);
-		char ++;
+		putchar(low);
+		low ++;
 	}
 	return (0);
 }
