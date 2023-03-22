@@ -6,8 +6,6 @@
  * Return: value of the last digit
  */
 
-
-
 int print_last_digit(int num)
 {
 	int last;
@@ -16,8 +14,7 @@ int print_last_digit(int num)
 	
 	if (last < -1)
 	{
-		last = last * -1;
-
+		last = (last * -1);
 	}
 	_putchar(last + '0');
 	return (last);
