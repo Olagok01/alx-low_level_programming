@@ -7,11 +7,11 @@
 
 void more_numbers(void)
 {
-	char a = 0;
+	char a;
 
 	for (a = 0; a <= 9; a++)
 	{
-		char b = 0;
+		char b;
 		for (b = 0; b <= 14; b++)
 		{
 			if (b > 9)
