@@ -22,7 +22,6 @@ void print_line(int n)
 				b++;
 			}
 			a++;
-			_putchar('\\');
 			_putchar('\n');
 		}
 	}
