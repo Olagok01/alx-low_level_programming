@@ -8,10 +8,10 @@
 void more_numbers(void)
 {
 	char a;
+	char b;
 
 	for (a = 0; a <= 9; a++)
 	{
-		char b;
 		for (b = 0; b <= 14; b++)
 		{
 			if (b > 9)
