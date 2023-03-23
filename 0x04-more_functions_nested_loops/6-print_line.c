@@ -22,8 +22,8 @@ void print_line(int n)
 				b++;
 			}
 			a++;
-			_putchar('\n');
 		}
+		_putchar('\n');
 	}
 	else
 	{
