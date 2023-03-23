@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_squre - function that prints a square, followed by a new line
+ * print_square - function that prints a square, followed by a new line
  * @size: the int for the paramaters of my function
  * Return: 0
  */
@@ -17,6 +17,7 @@ void print_square(int size)
 	{
 		while (a < size)
 		{
+			b = 0;
 			while (b < size)
 			{
 				_putchar('#');
