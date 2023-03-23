@@ -8,7 +8,7 @@
 
 void print_line(int n)
 {
-	int a = 48;
+	int a = 0;
 
 	if (n > 0)
 	{
