@@ -25,4 +25,5 @@ int main(void)
 		}
 		n++;
 	}
+	return (0);
 }
