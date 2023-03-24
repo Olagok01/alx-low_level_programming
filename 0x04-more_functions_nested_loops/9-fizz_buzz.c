@@ -1,38 +1,31 @@
 #include <stdio.h>
-
 /**
- * main - Entry point
- * Return: Always (0) Success
+ * main - function that checks for uppercase character.
+ * Return: 0
  */
-
 int main(void)
 {
-	int n = 1;
+	int h = 1;
 
-	while (n <= 100)
+	while (h <= 100)
 	{
-		if (n % 3 == 0 && n % 5 == 0)
-		{
+		if (h % 3 == 0 && h % 5 == 0)
 			printf("FizzBuzz ");
-		}
-		else if (n % 5 == 0)
+		else if (h % 5 == 0)
 		{
-			if (n == 100)
+			if (h == 100)
 			{
 				printf("Buzz");
 				printf("\n");
 			}
-			printf("Buzz ");
+			else
+				printf("Buzz ");
 		}
-		else if (n % 3 == 0)
-		{
+		else if (h % 3 == 0)
 			printf("Fizz ");
-		}
 		else
-		{
-			printf("%d ", n);
-		}
-		n++;
+			printf("%d ", h);
+	h++;
 	}
-	return (0);
+return (0);
 }
