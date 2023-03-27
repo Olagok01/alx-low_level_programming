@@ -15,7 +15,7 @@ void puts2(char *str)
 	{
 		if (i % 2 == 0)
 		{
-			c = s[i];
+			c = str[i];
 			_putchar(c);
 		}
 	}
