@@ -2,7 +2,7 @@
 
 /**
  * print_rev - func that prints a string, in reverse
- * 		 followed by a new line
+ * 		followed by a new line
  * @s: declaration of s and paramters for the function
  * Return: Always 0.
  */
@@ -17,7 +17,7 @@ void print_rev(char *s)
 		length++;
 	}
 
-	for (c = length; c >= 0; c--)
+	for (c = length - 1; c >= 0; c--)
 	{
 		_putchar(s[c]);
 	}
