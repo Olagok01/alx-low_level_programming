@@ -3,7 +3,7 @@
 
 /**
  * print_diagsums - function that prints the sum of the
- * 	 two diagonals of a square matrix of integers
+ *	 two diagonals of a square matrix of integers
  * @a: the array of matrix
  * @size: the size o fthe matrix
  */
@@ -19,5 +19,5 @@ void print_diagsums(int *a, int size)
 		diagonal_right_sum += *(a + i * size + i);
 		diagonal_left_sum += *(a + i * size + (size - i - 1));
 	}
-	printf("%d, %d\n", sum1 ,sum2);
+	printf("%d, %d\n" , sum1, sum2);
 }
