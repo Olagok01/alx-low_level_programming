@@ -8,14 +8,14 @@
 
 int _strlen(char *s)
 {
-        int length = 0;
-
-        if (*s != '\0')
-        {
-                length++;
-                length += _strlen(s + 1);
-        }
-        return (length);
+	int length = 0;
+	
+	if (*s != '\0')
+	{
+		length++;
+		length += _strlen(s + 1)
+	}
+	return (length);
 }
 
 
@@ -30,15 +30,15 @@ int _strlen(char *s)
 
 int _compare_string(char *s, int length, int index)
 {
-        if (s[index] == s[length / 2])
-        {
-                return (1);
-        }
-        if (s[index] == s[length - index - 1])
-        {
-                return (_compare_string(s, length, index + 1));
-        }
-        return (0);
+	if (s[index] == s[length / 2])
+	{
+		return (1);
+	}
+	if (s[index] == s[length - index - 1])
+	{
+		return (_compare_string(s, length, index + 1));
+	}
+	return (0);
 }
 
 /**
@@ -50,13 +50,13 @@ int _compare_string(char *s, int length, int index)
 
 int is_palindrome(char *s)
 {
-        int index = 0;
-        int length = _strlen(s);
-
-        if (!(*s))
-        {
-                return (1);
-        }
-        return (_compare_string(s, length, index));
+	int index = 0;
+	int length = _strlen(s);
+	
+	if (!(*s))
+	{
+		return (1);
+	}
+	return (_compare_string(s, length, index));
 
 }
