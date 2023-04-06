@@ -9,7 +9,7 @@
 int _strlen(char *s)
 {
 	int length = 0;
-	
+
 	if (*s != '\0')
 	{
 		length++;
@@ -52,7 +52,7 @@ int is_palindrome(char *s)
 {
 	int index = 0;
 	int length = _strlen(s);
-	
+
 	if (!(*s))
 	{
 		return (1);
