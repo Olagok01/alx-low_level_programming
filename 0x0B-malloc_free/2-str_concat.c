@@ -24,13 +24,13 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-
-	total_str = malloc(sizeof(char) * length);
-
 	for (i = 0; s1[i] || s2[i]; i++)
 	{
 		length++;
 	}
+
+	total_str = malloc(sizeof(char) * length);
+
 	if (total_str == NULL)
 	{
 		return (NULL);
