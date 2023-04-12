@@ -15,7 +15,7 @@ char *str_concat(char *s1, char *s2)
 	char *total_str;
 	int new_index = 0, i;
 	int length = 0;
-	
+
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -24,10 +24,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	
+
 	total_str = malloc(sizeof(char) * length);
-	
-	for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
+
+	for (i = 0; s1[i] || s2[i]; i++)
 	{
 		length++;
 	}
