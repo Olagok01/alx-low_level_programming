@@ -13,7 +13,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *total_str;
-	int i;
+	int new_index = 0, i;
 	int length = 0;
 	
 	if (s1 == NULL)
@@ -37,12 +37,11 @@ char *str_concat(char *s1, char *s2)
 	}
 	for (i = 0; s1[i]; i++)
 	{
-		total_str[i] = s1[i];
+		total_str[new_index++] = s1[i];
 	}
 	for (i = 0; s2[i]; i++)
 	{
-		total_str[i] = s2[i];
+		total_str[new_index++] = s2[i];
 	}
-	total_str[i] = '\0';
 	return (total_str);
 }
