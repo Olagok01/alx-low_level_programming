@@ -41,7 +41,7 @@ char *argstostr(int ac, char **av)
 		{
 			string[index++] = av[i][j];
 		}
-		string[index] = '\n';
+		string[index++] = '\n';
 	}
 	string[length] = '\0';
 	return (string);
