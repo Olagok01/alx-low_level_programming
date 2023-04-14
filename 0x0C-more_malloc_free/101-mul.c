@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * errors - handles errors for main
+ * error - handles errors for main
  */
 void error(void)
 {
@@ -12,7 +12,7 @@ void error(void)
 }
 
 /**
- * isdigit - checks if a string contains a non-digit char
+ * _isdigit - checks if a string contains a non-digit char
  * @s: string to be evaluated
  * Return: 0 if a non-digit is found, 1 otherwise
  */
@@ -62,24 +62,15 @@ int main(int argc, char *argv[])
 
 	s1 = argv[1], s2 = argv[2];
 	if (argc != 3 || !_isdigit(s1) || !_isdigit(s2))
-	{
 		error();
-	}
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 	length = len1 + len2 + 1;
-
 	result = malloc(sizeof(int) * length);
-
 	if (!result)
-	{
 		return (1);
-	}
-
 	for (i = 0; i <= len1 + len2; i++)
-	{
 		result[i] = 0;
-	}
 	for (len1 = len1 - 1; len1 >= 0; len1--)
 	{
 		number1 = s1[len1] - '0';
@@ -92,25 +83,17 @@ int main(int argc, char *argv[])
 			carry /= 10;
 		}
 		if (carry > 0)
-		{
 			result[len1 + len2 + 1] += carry;
-		}
 	}
 	for (i = 0; i < length - 1; i++)
 	{
 		if (result[i])
-		{
 			n = 1;
-		}
 		if (n)
-		{
 			_putchar(result[i] + '0');
-		}
 	}
 	if (!n)
-	{
 		_putchar('0');
-	}
 	_putchar('\n');
 	free(result);
 	return (0);
