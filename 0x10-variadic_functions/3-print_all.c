@@ -4,7 +4,7 @@
 
 /**
  * print_char - prints char
- * @va_list: args
+ * @args: args
  */
 
 void print_char(va_list args)
@@ -14,7 +14,7 @@ void print_char(va_list args)
 
 /**
  * print_int - prints int
- * @va_list: args
+ * @args: args
  */
 void print_int(va_list args)
 {
@@ -23,7 +23,7 @@ void print_int(va_list args)
 
 /**
  * print_float - prints float
- * @va_list: args
+ * @args: args
  */
 void print_float(va_list args)
 {
@@ -32,7 +32,7 @@ void print_float(va_list args)
 
 /**
  * print_string - prints string
- * @va_list: args
+ * @args: args
  */
 void print_string(va_list args)
 {
