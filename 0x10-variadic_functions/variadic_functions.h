@@ -13,7 +13,7 @@ void print_all(const char * const format, ...);
  * @letter: letter signifying data type
  * @func: function ptr
  */
-typedef struct dt
+typedef struct datatype
 {
 	char letter;
 	void (*func)(va_list);
