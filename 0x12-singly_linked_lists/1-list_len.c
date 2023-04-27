@@ -1,18 +1,19 @@
 #include "lists.h"
 
 /**
- * list_len - lenght of the list
+ * list_len - the lenght of the list
  * @h: points to node
  * Return: number of nodes
  */
+
 size_t list_len(const list_t *h)
 {
-       size_t i = 0;
+       unsigned int count = 0;
 
 	while (h != NULL)
 	{
 		i++;
 		h = h->next;
 	}
-	return (i);
+	return (count);
 }
