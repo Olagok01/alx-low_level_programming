@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * int _strlen- returns the length of a string
+ * _strlen - returns the length of a string
  * @str: string parameter
  * Return: length of string
  */
@@ -9,8 +9,6 @@ int _strlen(const char *str)
 {
 	int i;
 
-	if (str == NULL)
-		return (0);
 	for (i = 0; str[i] != '\0'; i++)
 	{
 	}
@@ -21,13 +19,11 @@ int _strlen(const char *str)
  * add_node_end - adds a new node to end of linked list
  * @head: pointer to pointer to linked list
  * @str: used to set the str attribute of the new node
- *
  * Return: address of linked list of NULL
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new, *temp_node;	
-
+	list_t *new, *temp_node;
 	unsigned int length;
 
 	new = malloc(sizeof(list_t));
