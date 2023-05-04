@@ -13,7 +13,7 @@ int set_bit(unsigned long int *num, unsigned int index)
 	if (index > (sizeof(unsigned long int) * 8))
 	{
 		return (-1);
-	}	
+	}
 	bit = bit << index;
 	*num = *num | bit;
 	return (1);
