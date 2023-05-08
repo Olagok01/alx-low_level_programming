@@ -1,10 +1,12 @@
 #include "main.h"
 
 /**
- * read_textfile - read a certain size and prints to std output
- * @filename: file to read from
- * @letters: size to read
- * Return: actual size read and printed
+ * read_textfile -  function that reads a text file and
+ *	prints it to the POSIX standard output.
+ * @filename: a pointer to the file to read from
+ * @letters: the size to read
+ * Return: the actual size read and printed if success
+ *	NULL - if the function or filename fails
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
