@@ -21,18 +21,19 @@ int create_file(const char *filename, char *text_content)
 
 	if (text_content != NULL)
 	{
-		for (length = 0; text_content[length];)
+		for (length = 0; text_content[length] != '\0'; length++)
 		{
-			length++;
 		}
 	}
 	else
 	{
 		text_content = "";
+		close(open_file);
+
 	}
 	write_file = write(open_file, text_content, length);
 
-	if (write_file == -1)
+	if (write_file == -1 || write_file != length)
 	{
 		close(open_file);
 		return (-1);
